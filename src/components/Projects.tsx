@@ -33,7 +33,7 @@ const Projects = () => {
       challenge: 'Creating an accessible communication tool for the deaf and hard-of-hearing community requires accurate real-time translation from voice to sign language.',
       solution: 'Developed a deep learning pipeline using TensorFlow and Keras that processes audio signals, extracts features, and generates sign language gestures with high accuracy.',
       impact: 'Enables real-time communication accessibility, breaking down barriers for the deaf community. Currently in production at Retalk.',
-      link: '#',
+      video: '/demos/speech2sign.mp4',
       github: 'https://github.com/Abedrayen'
     },
     {
@@ -120,6 +120,23 @@ const Projects = () => {
       impact:
         'Reduced operational friction and improved service quality by providing real-time visibility, streamlined communication, and centralized operational data, enabling organizations to scale their field operations with confidence.',
       video: '/demos/shiftme_all.mp4',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 8,
+      title: 'TailoredFinance',
+      category: 'Desktop & Financial Advisory',
+      description: 'Desktop dashboard for wealth and financial consultants to manage clients, track business metrics, and run advisory workflow.',
+      longDescription:
+        'TailoredFinance is a desktop dashboard for wealth and financial consultants. It gives advisors a single place to manage clients, track key business metrics, and run their advisory workflow. It includes CRM-like capabilities: client database, consultant management, and case/engagement tracking ("affaires") linked to clients. The app connects to the BackEnd_Tailored NestJS API to centralize full client files (patrimoine, revenus, fiscalité, objectifs, profilage de risque, capacité d\'épargne, IFI, etc.), visualize portfolio and business KPIs (clients, earnings, signed contracts, projects) via charts and tables, and manage the product universe (immobilier, private equity, forêts, etc.). Built with Electron and Next.js, it delivers a native desktop experience while staying tightly integrated with the backend\'s financial data and advisory logic.',
+      technologies: ['Electron', 'Next.js', 'NestJS', 'TypeScript', 'CRM', 'Financial Data'],
+      challenge:
+        'Wealth and financial advisors need a single place to manage clients, track business metrics, and run their advisory workflow, with full client files and portfolio visibility.',
+      solution:
+        'Built an Electron + Next.js desktop app connected to a NestJS API, providing CRM-like client and case management, centralized client files (patrimoine, fiscalité, profilage, etc.), and KPI visualization via charts and tables.',
+      impact:
+        'Gives advisors one dashboard to manage clients and engagements, visualize portfolio and business KPIs, and run their workflow with full integration to backend financial data and advisory logic.',
+      video: '/demos/tailord%20fianance.mp4',
       github: 'https://github.com/Abedrayen'
     }
   ]
