@@ -84,6 +84,95 @@
   z-index: 1;
 }
 
+.skills-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+  margin-top: var(--spacing-xl);
+}
+
+.skills-cloud-wrapper {
+  width: 100%;
+}
+
+.skills-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.skills-description-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.1;
+}
+
+.title-word-1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.title-word-2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-left: 0.5rem;
+  opacity: 0.7;
+}
+
+.title-word-3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.title-word-3::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+.skills-description-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-align: justify;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 4.5rem;
+  line-height: 0.8;
+  padding-top: 0.1rem;
+  padding-right: 0.5rem;
+  padding-left: 0;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Inter', sans-serif;
+}
+
 .skills-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -127,6 +216,19 @@
 }
 
 @media (max-width: 968px) {
+  .skills-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .skills-cloud-wrapper {
+    order: 1;
+  }
+
+  .skills-description {
+    order: 2;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: var(--spacing-sm);

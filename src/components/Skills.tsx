@@ -1,52 +1,38 @@
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
+import { Canvas } from '@react-three/fiber'
+import { IconCloud } from './IconCloud'
 import './Skills.css'
-
-interface Skill {
-  name: string
-  icon: string
-}
-
-// Icon mapping function
-const getSkillIcon = (skillName: string): string => {
-  const iconMap: { [key: string]: string } = {
-    'Python': '🐍',
-    'TensorFlow & Keras': '🧠',
-    'Scikit-learn': '📊',
-    'NLP & Deep Learning': '💬',
-    'BERT Fine-tuning': '🤖',
-    'RAG & Ollama 2.0': '🔍',
-    'MERN Stack': '⚛️',
-    'React': '⚛️',
-    'Node.js': '🟢',
-    'MongoDB': '🍃',
-    'WordPress': '📝',
-    'Pandas': '🐼',
-    'Matplotlib & Seaborn': '📈',
-    'AWS': '☁️'
-  }
-  return iconMap[skillName] || '💻'
-}
 
 const Skills = () => {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
 
-  const skills: Skill[] = [
-    { name: 'Python', icon: getSkillIcon('Python') },
-    { name: 'TensorFlow & Keras', icon: getSkillIcon('TensorFlow & Keras') },
-    { name: 'Scikit-learn', icon: getSkillIcon('Scikit-learn') },
-    { name: 'NLP & Deep Learning', icon: getSkillIcon('NLP & Deep Learning') },
-    { name: 'BERT Fine-tuning', icon: getSkillIcon('BERT Fine-tuning') },
-    { name: 'RAG & Ollama 2.0', icon: getSkillIcon('RAG & Ollama 2.0') },
-    { name: 'MERN Stack', icon: getSkillIcon('MERN Stack') },
-    { name: 'React', icon: getSkillIcon('React') },
-    { name: 'Node.js', icon: getSkillIcon('Node.js') },
-    { name: 'MongoDB', icon: getSkillIcon('MongoDB') },
-    { name: 'WordPress', icon: getSkillIcon('WordPress') },
-    { name: 'Pandas', icon: getSkillIcon('Pandas') },
-    { name: 'Matplotlib & Seaborn', icon: getSkillIcon('Matplotlib & Seaborn') },
-    { name: 'AWS', icon: getSkillIcon('AWS') }
+  const iconData = [
+    { slug: 'python', color: '3776AB' },
+    { slug: 'tensorflow', color: 'FF6F00' },
+    { slug: 'pytorch', color: 'EE4C2C' },
+    { slug: 'react', color: '61DAFB' },
+    { slug: 'nodedotjs', color: '339933' },
+    { slug: 'mongodb', color: '47A248' },
+    { slug: 'amazonwebservices', color: 'FF9900' },
+    { slug: 'javascript', color: 'F7DF1E' },
+    { slug: 'typescript', color: '3178C6' },
+    { slug: 'html5', color: 'E34F26' },
+    { slug: 'css3', color: '1572B6' },
+    { slug: 'express', color: '000000' },
+    { slug: 'docker', color: '2496ED' },
+    { slug: 'git', color: 'F05032' },
+    { slug: 'github', color: '181717' },
+    { slug: 'pandas', color: '150458' },
+    { slug: 'scikitlearn', color: 'F7931E' },
+    { slug: 'wordpress', color: '21759B' },
+    { slug: 'postgresql', color: '336791' },
+    { slug: 'nginx', color: '009639' },
   ]
+
+  const images = iconData.map(
+    ({ slug, color }) => `https://cdn.simpleicons.org/${slug}/${color}`
+  )
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -88,21 +74,38 @@ const Skills = () => {
             </p>
           </motion.div>
 
-          <div className="skills-grid">
-            {skills.map((skill) => (
-              <motion.div
-                key={skill.name}
-                className="skill-item"
-                variants={itemVariants}
-                whileHover={{ scale: 1.1, y: -4 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <div className="skill-icon-wrapper">
-                  <span className="skill-icon">{skill.icon}</span>
-                </div>
-                <span className="skill-name">{skill.name}</span>
-              </motion.div>
-            ))}
+          <div className="skills-content-wrapper">
+            <motion.div 
+              className="skills-cloud-wrapper"
+              variants={itemVariants}
+            >
+              <div className="relative flex size-full items-center justify-center overflow-hidden" style={{ height: '500px', width: '100%' }}>
+                <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
+                  <ambientLight intensity={0.5} />
+                  <pointLight position={[10, 10, 10]} />
+                  <IconCloud images={images} />
+                </Canvas>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="skills-description"
+              variants={itemVariants}
+            >
+              <h3 className="skills-description-title">
+                <span className="title-word-1">Beyond</span>
+                <span className="title-word-2">the</span>
+                <span className="title-word-3">Tools</span>
+              </h3>
+              <p className="skills-description-text">
+                <span className="drop-cap">T</span>echnology is transient; principles are permanent. 
+                These tools represent years of deliberate practice—understanding trade-offs, recognizing 
+                patterns, and knowing when to apply the right solution. True expertise lies in seeing 
+                beyond code, architecting solutions that are maintainable, scalable, and aligned with 
+                business value. Every icon here tells a story of production systems and hard decisions 
+                under constraints.
+              </p>
+            </motion.div>
           </div>
 
           <motion.div className="skills-footer" variants={itemVariants}>

@@ -11,7 +11,7 @@ const Navigation = () => {
     setIsScrolled(latest > 50)
     
     // Update active section based on scroll position
-    const sections = ['home', 'about', 'projects', 'skills', 'contact']
+    const sections = ['home', 'about', 'projects', 'contact']
     const sectionElements = sections.map(id => document.getElementById(id))
     
     for (let i = sectionElements.length - 1; i >= 0; i--) {
@@ -30,7 +30,6 @@ const Navigation = () => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
-    { id: 'skills', label: 'Skills' },
     { id: 'contact', label: 'Contact' },
   ]
 
