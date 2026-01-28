@@ -38,7 +38,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'ShiftMe — Field Service & Operations Management Platform',
+      title: 'Field Service & Operations Management Platform',
       category: 'Field Service & Operations',
       description: 'Multi-tenant platform orchestrating people, missions, and data across the full field service lifecycle.',
       longDescription:
@@ -55,7 +55,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Quant — AI-Powered Document Intelligence Platform',
+      title: 'AI-Powered Document Intelligence Platform',
       category: 'Document Intelligence & NLP',
       description: 'Enterprise-grade platform for AI-powered document classification, data extraction, and audit-ready traceability.',
       longDescription:
