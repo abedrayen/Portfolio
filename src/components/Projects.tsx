@@ -38,75 +38,6 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Resume-Job Matching Platform',
-      category: 'NLP & Classification',
-      description: 'AI-powered platform that matches resumes to job postings using NLP summarization and classification.',
-      longDescription: 'An intelligent matching system that uses NLP techniques to analyze resumes and job descriptions, providing accurate matches with feedback classification.',
-      technologies: ['Python', 'NLP', 'Scikit-learn', 'BERT', 'Classification'],
-      challenge: 'Job seekers struggle to find relevant positions, and employers need efficient ways to identify qualified candidates from large applicant pools.',
-      solution: 'Built an NLP-based system using BERT fine-tuning for summarization and classification, enabling intelligent matching with feedback mechanisms.',
-      impact: 'Improves job matching accuracy, saving time for both job seekers and employers. Currently deployed at Retalk.',
-      link: '#',
-      github: 'https://github.com/Abedrayen'
-    },
-    {
-      id: 3,
-      title: 'Medical Chatbot with Emotion Detection',
-      category: 'AI & Healthcare',
-      description: 'Intelligent medical chatbot with emotion detection and geolocation-based recommendations using RAG and Ollama 2.0.',
-      longDescription: 'A comprehensive medical assistant chatbot that detects user emotions, provides location-based healthcare recommendations, and retrieves medical information using RAG architecture.',
-      technologies: ['Python', 'Ollama 2.0', 'RAG', 'NLP', 'Emotion Detection', 'Geolocation'],
-      challenge: 'Patients need accessible medical information and recommendations, but existing systems lack emotional intelligence and contextual awareness.',
-      solution: 'Developed a chatbot using Ollama 2.0 with RAG for medical knowledge retrieval, integrated emotion detection, and geolocation services for personalized recommendations.',
-      impact: 'Provides accessible medical information with emotional support, helping users make informed healthcare decisions. Built during internship at DIGIX and used in GoMyCode courses.',
-      link: '#',
-      github: 'https://github.com/Abedrayen'
-    },
-    {
-      id: 4,
-      title: 'Neurodevelopmental Disorder Detection App',
-      category: 'Machine Learning & Mobile',
-      description: 'Mobile application for early detection of neurodevelopmental disorders in children using ML models.',
-      longDescription: 'A mobile application that uses machine learning to analyze behavioral patterns and provide early diagnosis of neurodevelopmental disorders in children.',
-      technologies: ['Python', 'Machine Learning', 'Mobile Development', 'TensorFlow'],
-      challenge: 'Early detection of neurodevelopmental disorders is crucial for effective intervention, but traditional diagnosis methods are time-consuming and require specialized expertise.',
-      solution: 'Created a mobile app with ML models that analyze behavioral indicators, providing accessible early screening tools for parents and healthcare providers.',
-      impact: 'Enables early intervention by making disorder detection more accessible, potentially improving outcomes for affected children.',
-      link: '#',
-      github: 'https://github.com/Abedrayen'
-    },
-    {
-      id: 5,
-      title: 'Smart Online Working Platform',
-      category: 'Full-Stack Development',
-      description: 'AI-powered productivity platform with to-do lists, timers, chatbot, and intelligent recommendations.',
-      longDescription: 'A comprehensive web platform combining productivity tools with AI capabilities, including task management, time tracking, chatbot assistance, and personalized recommendations.',
-      technologies: ['MERN Stack', 'React', 'Node.js', 'MongoDB', 'AI', 'Python'],
-      challenge: 'Remote workers need integrated productivity tools that adapt to their workflow and provide intelligent assistance.',
-      solution: 'Built a full-stack MERN application with AI-powered features including smart task management, productivity tracking, chatbot assistance, and personalized recommendations.',
-      impact: 'Enhances remote work productivity by providing an all-in-one platform with intelligent features. Developed during internship at DunDill.',
-      link: '#',
-      github: 'https://github.com/Abedrayen'
-    },
-    {
-      id: 6,
-      title: 'Quant — AI-Powered Document Intelligence Platform',
-      category: 'Document Intelligence & NLP',
-      description: 'Enterprise-grade platform for AI-powered document classification, data extraction, and audit-ready traceability.',
-      longDescription:
-        'Quant automates the full lifecycle of financial and administrative documents—from secure ingestion and preprocessing to AI-driven classification, structured data extraction, and audit-ready tracking. Powered by LayoutLMv3, it understands both visual layout and semantic content, enabling highly accurate processing across heterogeneous formats such as scans, PDFs, and images.',
-      technologies: ['Python', 'PyTorch', 'LayoutLMv3', 'FastAPI', 'PostgreSQL', 'Docker', 'Kubernetes'],
-      challenge:
-        'Large enterprises process huge volumes of financial and administrative documents manually, making it difficult to ensure speed, accuracy, and full traceability while meeting strict compliance requirements.',
-      solution:
-        'Designed and implemented a LayoutLMv3-based document intelligence pipeline that handles secure ingestion, preprocessing, classification, and structured data extraction, with full customer-centric tracking and detailed processing histories.',
-      impact:
-        'Significantly reduced manual document handling time and error rates while providing end-to-end visibility and auditability, making back-office operations faster, more reliable, and compliant.',
-      video: '/demos/quant_all.mp4',
-      github: 'https://github.com/Abedrayen'
-    },
-    {
-      id: 7,
       title: 'ShiftMe — Field Service & Operations Management Platform',
       category: 'Field Service & Operations',
       description: 'Multi-tenant platform orchestrating people, missions, and data across the full field service lifecycle.',
@@ -123,7 +54,24 @@ const Projects = () => {
       github: 'https://github.com/Abedrayen'
     },
     {
-      id: 8,
+      id: 3,
+      title: 'Quant — AI-Powered Document Intelligence Platform',
+      category: 'Document Intelligence & NLP',
+      description: 'Enterprise-grade platform for AI-powered document classification, data extraction, and audit-ready traceability.',
+      longDescription:
+        'Quant automates the full lifecycle of financial and administrative documents—from secure ingestion and preprocessing to AI-driven classification, structured data extraction, and audit-ready tracking. Powered by LayoutLMv3, it understands both visual layout and semantic content, enabling highly accurate processing across heterogeneous formats such as scans, PDFs, and images.',
+      technologies: ['Python', 'PyTorch', 'LayoutLMv3', 'FastAPI', 'PostgreSQL', 'Docker', 'Kubernetes'],
+      challenge:
+        'Large enterprises process huge volumes of financial and administrative documents manually, making it difficult to ensure speed, accuracy, and full traceability while meeting strict compliance requirements.',
+      solution:
+        'Designed and implemented a LayoutLMv3-based document intelligence pipeline that handles secure ingestion, preprocessing, classification, and structured data extraction, with full customer-centric tracking and detailed processing histories.',
+      impact:
+        'Significantly reduced manual document handling time and error rates while providing end-to-end visibility and auditability, making back-office operations faster, more reliable, and compliant.',
+      video: '/demos/quant_all.mp4',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 4,
       title: 'TailoredFinance',
       category: 'Desktop & Financial Advisory',
       description: 'Desktop dashboard for wealth and financial consultants to manage clients, track business metrics, and run advisory workflow.',
@@ -138,7 +86,60 @@ const Projects = () => {
         'Gives advisors one dashboard to manage clients and engagements, visualize portfolio and business KPIs, and run their workflow with full integration to backend financial data and advisory logic.',
       video: '/demos/tailord%20fianance.mp4',
       github: 'https://github.com/Abedrayen'
-    }
+    },
+    {
+      id: 5,
+      title: 'Medical Chatbot with Emotion Detection',
+      category: 'AI & Healthcare',
+      description: 'Intelligent medical chatbot with emotion detection and geolocation-based recommendations using RAG and Ollama 2.0.',
+      longDescription: 'A comprehensive medical assistant chatbot that detects user emotions, provides location-based healthcare recommendations, and retrieves medical information using RAG architecture.',
+      technologies: ['Python', 'Ollama 2.0', 'RAG', 'NLP', 'Emotion Detection', 'Geolocation'],
+      challenge: 'Patients need accessible medical information and recommendations, but existing systems lack emotional intelligence and contextual awareness.',
+      solution: 'Developed a chatbot using Ollama 2.0 with RAG for medical knowledge retrieval, integrated emotion detection, and geolocation services for personalized recommendations.',
+      impact: 'Provides accessible medical information with emotional support, helping users make informed healthcare decisions. Built during internship at DIGIX and used in GoMyCode courses.',
+      link: '#',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 6,
+      title: 'Neurodevelopmental Disorder Detection App',
+      category: 'Machine Learning & Mobile',
+      description: 'Mobile application for early detection of neurodevelopmental disorders in children using ML models.',
+      longDescription: 'A mobile application that uses machine learning to analyze behavioral patterns and provide early diagnosis of neurodevelopmental disorders in children.',
+      technologies: ['Python', 'Machine Learning', 'Mobile Development', 'TensorFlow'],
+      challenge: 'Early detection of neurodevelopmental disorders is crucial for effective intervention, but traditional diagnosis methods are time-consuming and require specialized expertise.',
+      solution: 'Created a mobile app with ML models that analyze behavioral indicators, providing accessible early screening tools for parents and healthcare providers.',
+      impact: 'Enables early intervention by making disorder detection more accessible, potentially improving outcomes for affected children.',
+      link: '#',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 7,
+      title: 'Resume-Job Matching Platform',
+      category: 'NLP & Classification',
+      description: 'AI-powered platform that matches resumes to job postings using NLP summarization and classification.',
+      longDescription: 'An intelligent matching system that uses NLP techniques to analyze resumes and job descriptions, providing accurate matches with feedback classification.',
+      technologies: ['Python', 'NLP', 'Scikit-learn', 'BERT', 'Classification'],
+      challenge: 'Job seekers struggle to find relevant positions, and employers need efficient ways to identify qualified candidates from large applicant pools.',
+      solution: 'Built an NLP-based system using BERT fine-tuning for summarization and classification, enabling intelligent matching with feedback mechanisms.',
+      impact: 'Improves job matching accuracy, saving time for both job seekers and employers. Currently deployed at Retalk.',
+      link: '#',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 8,
+      title: 'Smart Online Working Platform',
+      category: 'Full-Stack Development',
+      description: 'AI-powered productivity platform with to-do lists, timers, chatbot, and intelligent recommendations.',
+      longDescription: 'A comprehensive web platform combining productivity tools with AI capabilities, including task management, time tracking, chatbot assistance, and personalized recommendations.',
+      technologies: ['MERN Stack', 'React', 'Node.js', 'MongoDB', 'AI', 'Python'],
+      challenge: 'Remote workers need integrated productivity tools that adapt to their workflow and provide intelligent assistance.',
+      solution: 'Built a full-stack MERN application with AI-powered features including smart task management, productivity tracking, chatbot assistance, and personalized recommendations.',
+      impact: 'Enhances remote work productivity by providing an all-in-one platform with intelligent features. Developed during internship at DunDill.',
+      link: '#',
+      github: 'https://github.com/Abedrayen'
+    },
+  
   ]
 
   const containerVariants = {

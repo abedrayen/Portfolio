@@ -68,9 +68,9 @@ const Hero = () => {
           </motion.h1>
 
           <motion.p className="hero-description" variants={itemVariants}>
-            Building intelligent solutions with AI and Python. Specializing in Machine Learning, NLP, 
-            Deep Learning, and Full-Stack Development. Currently working on voice-to-sign language 
-            translation and AI-powered platforms.
+            End-to-end software engineer building production systems, with a strong focus on applied AI.
+            I work across architecture, backend, and frontend, and leverage Machine Learning, NLP, and
+            Deep Learning wherever they create real product value.
           </motion.p>
 
           <motion.div className="hero-actions" variants={itemVariants}>
@@ -131,7 +131,7 @@ const Hero = () => {
             <div className="code-content">
               <pre>
                 <code>
-{`# AI Engineer | Software Developer
+                  {`# Software Engineer | Applied AI
 import tensorflow as tf
 from transformers import pipeline
 
