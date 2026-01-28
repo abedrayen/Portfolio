@@ -15,6 +15,7 @@ interface Project {
   impact: string
   link?: string
   github?: string
+  video?: string
 }
 
 const Projects = () => {
@@ -85,6 +86,40 @@ const Projects = () => {
       solution: 'Built a full-stack MERN application with AI-powered features including smart task management, productivity tracking, chatbot assistance, and personalized recommendations.',
       impact: 'Enhances remote work productivity by providing an all-in-one platform with intelligent features. Developed during internship at DunDill.',
       link: '#',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 6,
+      title: 'Quant — AI-Powered Document Intelligence Platform',
+      category: 'Document Intelligence & NLP',
+      description: 'Enterprise-grade platform for AI-powered document classification, data extraction, and audit-ready traceability.',
+      longDescription:
+        'Quant automates the full lifecycle of financial and administrative documents—from secure ingestion and preprocessing to AI-driven classification, structured data extraction, and audit-ready tracking. Powered by LayoutLMv3, it understands both visual layout and semantic content, enabling highly accurate processing across heterogeneous formats such as scans, PDFs, and images.',
+      technologies: ['Python', 'PyTorch', 'LayoutLMv3', 'FastAPI', 'PostgreSQL', 'Docker', 'Kubernetes'],
+      challenge:
+        'Large enterprises process huge volumes of financial and administrative documents manually, making it difficult to ensure speed, accuracy, and full traceability while meeting strict compliance requirements.',
+      solution:
+        'Designed and implemented a LayoutLMv3-based document intelligence pipeline that handles secure ingestion, preprocessing, classification, and structured data extraction, with full customer-centric tracking and detailed processing histories.',
+      impact:
+        'Significantly reduced manual document handling time and error rates while providing end-to-end visibility and auditability, making back-office operations faster, more reliable, and compliant.',
+      video: '/demos/quant_all.mp4',
+      github: 'https://github.com/Abedrayen'
+    },
+    {
+      id: 7,
+      title: 'ShiftMe — Field Service & Operations Management Platform',
+      category: 'Field Service & Operations',
+      description: 'Multi-tenant platform orchestrating people, missions, and data across the full field service lifecycle.',
+      longDescription:
+        'ShiftMe is an end-to-end field service and operations management platform that centralizes mission planning, execution, and reporting in a single operational hub. Each user role—administrators, planners, field users, and clients—gets a tailored experience for configuring workflows, scheduling missions, executing visits via mobile, and tracking interventions and billing in real time.',
+      technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'React Native'],
+      challenge:
+        'Service organizations often rely on fragmented tools and manual coordination, leading to poor visibility, inefficient scheduling, and limited transparency for both internal teams and clients.',
+      solution:
+        'Built a multi-tenant, role-based platform that unifies mission planning and supervision, real-time field execution via a mobile app, and a dedicated client portal for tracking interventions, documents, and billing.',
+      impact:
+        'Reduced operational friction and improved service quality by providing real-time visibility, streamlined communication, and centralized operational data, enabling organizations to scale their field operations with confidence.',
+      video: '/demos/shiftme_all.mp4',
       github: 'https://github.com/Abedrayen'
     }
   ]
@@ -166,8 +201,16 @@ const Projects = () => {
                       <h4>The Impact</h4>
                       <p>{project.impact}</p>
                     </div>
+                    {project.video && (
+                      <div className="project-video">
+                        <video className="project-video-player" controls playsInline>
+                          <source src={project.video} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    )}
                     <div className="project-links">
-                      {project.link && (
+                      {project.link && !project.video && (
                         <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
                           View Live
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
