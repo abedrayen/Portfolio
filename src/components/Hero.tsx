@@ -15,12 +15,15 @@ const Hero = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
+      y: 0,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
+        delayChildren: 0.2,
+        duration: 0.8,
+        ease: [0.4, 0, 0.2, 1]
       }
     }
   }
