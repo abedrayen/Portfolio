@@ -97,7 +97,7 @@ const Projects = () => {
       challenge: 'Patients need accessible medical information and recommendations, but existing systems lack emotional intelligence and contextual awareness.',
       solution: 'Developed a chatbot using Ollama 2.0 with RAG for medical knowledge retrieval, integrated emotion detection, and geolocation services for personalized recommendations.',
       impact: 'Provides accessible medical information with emotional support, helping users make informed healthcare decisions. Built during internship at DIGIX and used in GoMyCode courses.',
-      link: '#',
+      link: 'https://www.linkedin.com/posts/rayen-abed-545799252_ai-healthtech-chatbot-activity-7241201658448211969-vZlg',
       github: 'https://github.com/Abedrayen'
     },
     {

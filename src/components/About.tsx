@@ -27,13 +27,15 @@ const About = () => {
     {
       year: '2024',
       title: 'Professional Experience',
-      description: 'Software Engineering Intern at DunDill, AI Engineering Intern at DIGIX, building real-world AI solutions.',
+      description:
+        'Software Engineering Intern at DunDill and AI-focused Software Intern at DIGIX, shipping production features and intelligent systems end to end.',
       icon: '🚀'
     },
     {
       year: '2025',
-      title: 'AI Engineer at Retalk',
-      description: 'Working on automatic voice-to-sign language translation and resume-job matching platforms using deep learning and NLP.',
+      title: 'Software Engineer (AI) at Retalk',
+      description:
+        'Designing and deploying voice-to-sign language translation and resume–job matching platforms that blend solid software engineering with deep learning and NLP.',
       icon: '🤖'
     }
   ]
@@ -75,8 +77,8 @@ const About = () => {
               More than just code — <span className="gradient-text">a journey</span>
             </h2>
             <p className="section-description">
-              Every line of code tells a story. Mine began with curiosity and evolved into a passion 
-              for creating intelligent solutions that make a difference.
+              Every line of code tells a story. Mine began with curiosity about how systems work and
+              evolved into a passion for building robust software that embeds AI where it truly adds value.
             </p>
           </motion.div>
 
@@ -85,25 +87,27 @@ const About = () => {
               <div className="narrative-block">
                 <h3>The Philosophy</h3>
                 <p>
-                  I believe AI should be accessible and impactful. From medical chatbots with emotion 
-                  detection to voice-to-sign language translation, I focus on building solutions that 
-                  make a real difference in people's lives.
+                  I&apos;m a software engineer first, with a strong foundation in architecture, backend, and
+                  frontend, and a deep interest in AI. From medical chatbots with emotion detection to
+                  voice-to-sign language translation, I focus on shipping reliable products that use AI to
+                  solve real problems.
                 </p>
               </div>
               <div className="narrative-block">
                 <h3>The Process</h3>
                 <p>
-                  Combining deep learning expertise with full-stack development, I build end-to-end 
-                  solutions. Whether it's fine-tuning BERT models, implementing RAG systems, or 
-                  creating MERN stack applications, I approach each project with technical rigor.
+                  I combine solid software engineering practices with applied AI. That means clean
+                  architectures, tested APIs, and scalable frontends, then layering in techniques like
+                  BERT fine-tuning, RAG systems, and custom models only where they create clear product
+                  outcomes.
                 </p>
               </div>
               <div className="narrative-block">
                 <h3>The Impact</h3>
                 <p>
-                  From teaching AI to mentoring students at GoMyCode, to building production systems 
-                  at Retalk and DIGIX, I've worked on projects that solve real problems — from 
-                  healthcare to accessibility to productivity.
+                  From teaching AI to mentoring students at GoMyCode, to owning production features at
+                  DunDill, DIGIX, and Retalk, I&apos;ve worked on systems that span healthcare, accessibility,
+                  and productivity — always with a software-engineering mindset and AI as a powerful tool.
                 </p>
               </div>
             </motion.div>
