@@ -33,7 +33,7 @@ const About = () => {
     },
     {
       year: '2025',
-      title: 'Software Engineer (AI) at Retalk',
+      title: 'Software Engineer at Retalk',
       description:
         'Designing and deploying voice-to-sign language translation and resume–job matching platforms that blend solid software engineering with deep learning and NLP.',
       icon: '🤖'
