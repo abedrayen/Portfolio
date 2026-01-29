@@ -96,6 +96,18 @@ const Hero = () => {
             >
               <span>Let's Connect</span>
             </motion.a>
+            <motion.a
+              href="/CV Abed Rayen.pdf"
+              download="CV_Abed_Rayen.pdf"
+              className="btn btn-resume"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span>Download Resume</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2.5V13.5M10 13.5L6.25 9.75M10 13.5L13.75 9.75M3.75 15H16.25" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </motion.a>
           </motion.div>
 
           <motion.div className="hero-stats" variants={itemVariants}>
